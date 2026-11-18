@@ -1,0 +1,18 @@
+1. What AI tool did I use?
+I used ChatGPT to help me create my About Me section using HTML and CSS.
+
+What was my initial prompt?
+
+I used the example as a main outline and just changed it a little bit. "Create an About Me section for my portfolio website using only HTML and CSS. I want to include a profile picture on the left side using a placeholder image for now, my name displayed as a heading, a short paragraph for a bio, four areas displayed as small tags or badges, use "my info" as a placeholder text so I can replace it with my own info after. Make sure the layout is responsive so everything stacks vertically when viewed on a phone. I want the design to look simple, modern, and organized, with soft, light colors like sage green, browns, and creams. Also, include comments in the CSS to explain what each part does. 
+
+How many total prompts did I use?
+
+I used around 3 prompts to make my website and change a few things until I liked how it worked.
+
+What customizations did I make to the design?
+
+I decided that I originally wanted to use sage green, brown, and cream because I like how the colors look together, and they are also my favorite colors, since it is an about me portfolio I felt that it fit. I also wanted the website to look simple and not have too much going on, so I rounded the corners and added more spacing between everything. I also made the skill badges match the rest of the colors, so everything looked more put together. 
+
+5. What's one thing the AI code taught me about HTML or CSS?
+
+One thing I learned was how to use flex wrap in CSS to keep the skill badges organized. I already knew how to use CSS to change colors and layouts, but I didn't know much about this property. It helped me understand how to make the badges move onto another link when there isn't enough space, instead of having everything crowded together. 
