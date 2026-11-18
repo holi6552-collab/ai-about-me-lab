@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me | My Portfolio</title>
+  <style>
+    /* Colors and overall page appearance */
+    :root {
+      --sage: #82967b;
+      --sage-light: #e8eee4;
+      --brown: #675345;
+      --cream: #faf8f2;
+      --text: #493f37;
+    }
+
+    /* Include padding and borders in element widths */
+    * { box-sizing: border-box; }
+
+    /* Set the page font, background, and spacing */
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 18px;
+    }
+
+    /* Main card: photo on left, information on right */
+    .about-card {
+      display: flex;
+      align-items: center;
+      gap: 42px;
+      width: 100%;
+      max-width: 980px;
+      padding: 44px;
+      background: var(--sage-light);
+      border-radius: 22px;
+      box-shadow: 0 12px 30px rgba(72, 63, 50, 0.10);
+    }
+
+    /* Profile image container */
+    .photo-area { flex: 0 0 32%; }
+
+    /* Keep the photo neatly sized and rounded */
+    .profile-photo {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      border-radius: 16px;
+      background: #d6dcd0;
+    }
+
+    /* Biography and skills area */
+    .about-content { flex: 1; min-width: 0; }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: #607a5d;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    /* Name heading */
+    h1 {
+      margin: 0 0 18px;
+      color: var(--brown);
+      font-size: clamp(30px, 4vw, 42px);
+    }
+
+    /* Biography paragraph */
+    .bio { font-size: 16px; line-height: 1.8; margin-bottom: 25px; }
+
+    h2 { color: var(--brown); font-size: 19px; margin-bottom: 14px; }
+
+    /* Arrange badges in rows, wrapping if needed */
+    .skills { display: flex; flex-wrap: wrap; gap: 10px; }
+
+    /* Rounded sage green skill badges */
+    .skill {
+      display: inline-block;
+      padding: 10px 15px;
+      border-radius: 999px;
+      background: var(--sage);
+      color: white;
+      font-size: 14px;
+    }
+
+    /* Stack the photo above the text on smaller screens */
+    @media (max-width: 767px) {
+      .about-card {
+        flex-direction: column;
+        gap: 25px;
+        padding: 26px;
+        text-align: center;
+      }
+      .photo-area { width: 100%; max-width: 260px; flex: none; }
+      .skills { justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+  <main class="about-card">
+    <!-- Replace this placeholder with your own photo URL later -->
+    <div class="photo-area">
+      <img class="profile-photo"
+           src="https://placehold.co/400x500/e0e6da/675345?text=Profile+Photo"
+           alt="Placeholder for my profile picture">
+    </div>
+
+    <section class="about-content" aria-labelledby="my-name">
+      <p class="eyebrow">About Me</p>
+      <!-- Replace My Info with your name -->
+      <h1 id="my-name">My Info</h1>
+
+      <!-- Replace this paragraph with your own 2-3 sentence bio -->
+      <p class="bio">My info. This is where I will write a short introduction about myself, my interests, and what I enjoy doing.</p>
+
+      <h2>My Skills &amp; Interests</h2>
+      <!-- Replace these with four real skills or interests -->
+      <div class="skills">
+        <span class="skill">My Info 1</span>
+        <span class="skill">My Info 2</span>
+        <span class="skill">My Info 3</span>
+        <span class="skill">My Info 4</span>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
